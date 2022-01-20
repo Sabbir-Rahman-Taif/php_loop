@@ -1,0 +1,109 @@
+<?php
+
+$userName = "Sabbir106";
+$security_Question = "Jack Sparrow";
+
+if ($userName == "Sabbir106") {
+  echo $userName," ", "<strong>is correct</strong>";
+}
+else {
+  echo $userName, "<strong>is wrong</strong>";
+}
+
+echo "<br>";
+
+if ($security_Question == "Jack Sparrow") {
+  echo $security_Question," ", "<strong>is correct</strong>";
+}
+else {
+  echo $security_Question," ", "<strong>wrong answer. Try again</strong>";
+}
+
+?>
+
+<?php
+
+$year = "1992";
+
+if ($year == 1990) {
+  echo $year,"."," ","Welcome!";
+}
+elseif ($year <= 1995) {
+  echo $year,"."," ","you are authorized to enter";
+}
+elseif ($year > 1995) {
+  echo $year,"."," ","you are not authorized to enter";
+}
+elseif ($year == 2000) {
+  echo $year, "."," ","you are a child";
+}
+else {
+  echo $year,"."," ","Please enter your Birth year";
+}
+?>
+
+<?php
+
+$username = "Sabbir_Rahman";
+$password = "987654";
+$two_F_A = "385556";
+
+if ($username == "Sabbir_Rahman") 
+{
+  if ($password == "987654") 
+  {
+    if ($two_F_A == "385556") 
+    {
+      echo "Welcome! Have a nice day";
+    }
+    else {
+      echo "Having Problem?"," ", "<button> Contact <strong> HERE </strong> </button>";
+    }
+  }
+  else {
+    echo "Inavlid password."," ", "<button>Try Again</button>";
+
+    echo "<br>";
+    
+    echo "Forget Password?"," ", "<button>Reset it</button>";
+  }
+}
+else {
+  echo "Wrong username"," ","<button>Try Again</button>" ;
+}
+
+?>
+
+<?php
+
+$n = 1;
+
+while ($n <= 100) {
+  $x = 2 * $n;
+  echo $x, " ", "is a even number", "<br>";
+  $n++;
+}
+
+?>
+
+<?php
+
+$x = 10;
+
+do {
+  echo "This is", " ", $x;
+} while ($x <= 10);
+
+?>
+
+<?php
+
+$stdlist = array("sumon","tawfiq","sabbir");
+$totstd = count($stdlist);
+
+for ($i=0; $i < $totstd; $i++) { 
+	echo $i;
+	echo $stdlist[$i]. "<br>";
+}
+
+?>
